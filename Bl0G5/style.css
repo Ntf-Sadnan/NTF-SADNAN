@@ -1,0 +1,8 @@
+h1{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    animation: flick 0.8s infinite alternate;
+}
+@keyframes flick {
+    15%{opacity: 15%;}
+}
