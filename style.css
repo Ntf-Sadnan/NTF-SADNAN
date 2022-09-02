@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/gpo5xMagKwcRE5cDCCLJfJ-1200-80.jpg);
+    background-color: black;
+    
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+nav{
+    
+    margin-top: -40px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size:medium;
+    font-weight: bold;
+    width: 250px;
+    height: 50px;
+    
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    animation: bar-come 1s forwards;
+
+
+}
+
+nav ul{
+    
+    text-align: center;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 25px;
+    
+}
+
+nav ul li a{
+    
+   
+    color: #fff;
+    text-decoration: none;
+    animation: flick 0.8s infinite alternate;
+}
+@keyframes flick {
+    15%{opacity: 15%}
+}
+
+#blog{
+    margin-left: -15px;
+}
+
+@keyframes bar-come {
+    from{margin-top: -100px;}
+    to { margin-top: 0px;}
+    0%{opacity: 0%;}
+    50%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+
+.img-container{
+    
+    text-align: center;
+    animation: come 0.8s forwards;
+}
+
+@keyframes come{
+    0% { margin-top: -500px; }
+    100% { margin-top: 0px; }
+}
+
+#front-img{
+    
+    margin-top: 4%;
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.text-container{
+   
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+    
+    bottom: 8%;
+    
+    animation: t-come 1s forwards;
+
+
+
+}
+@keyframes t-come{
+    from{margin-top: -100px;}
+    to{margin-top: 0px;}
+    0% { opacity: 0%; }
+    50% { opacity: 0%; }
+    100% { opacity: 100%; }
+    
+}
+
+.text-container h2{
+    font-size: 50px;
+    animation: go 2s infinite alternate;
+   
+    
+}
+@keyframes go{
+
+    0%{ font-family: serif; }
+    50%{ font-family: 'poppins', sans-serif; }
+
+}
+
+.text-container h1{
+    font-family: 'poppins', sans-serif;
+    font-size: 100px;
+    line-height: 90px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(web-img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    body{
+        background-image: url(web-img/wallpp.png);
+        background-size: cover;
+        background-position: center;
+        
+    }
+}
